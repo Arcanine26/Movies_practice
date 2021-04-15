@@ -8,6 +8,34 @@ const personalMovieDB = {
     privat: false
 };
 
+// let i = 0;
+// while (i < 2) {
+//     const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
+//           rating = prompt('На сколько вы оцените его?');
+//     i++;
+//     if (lastWatch != null && rating != null && lastWatch != '' && rating != '' && lastWatch.length < 50){
+//         personalMovieDB.movies[lastWatch] = rating;
+//         console.log('Done');
+//     } else {
+//         alert('Error');
+//         i--;
+//     }
+// }
+
+// do {
+//     const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
+//           rating = prompt('На сколько вы оцените его?');
+//     i++;
+//     if (lastWatch != null && rating != null && lastWatch != '' && rating != '' && lastWatch.length < 50){
+//         personalMovieDB.movies[lastWatch] = rating;
+//         console.log('Done');
+//     } else {
+//         alert('Error');
+//         i--;
+//     }
+// }
+// while(i < 2);
+
 for (let i = 0; i < 2; i++){
     const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
           rating = prompt('На сколько вы оцените его?');
