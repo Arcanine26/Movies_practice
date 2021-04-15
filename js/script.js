@@ -13,3 +13,13 @@ const lastWatch1 = prompt('Один из последних просмотрен
 personalMovieDB.movies[lastWatch1] = rating1;
 personalMovieDB.movies[lastWatch2] = rating2;
 console.log(personalMovieDB);
+
+if (personalMovieDB.count < 10) {
+    console.log('Просмотрено довольно мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <=30) {
+    console.log('Вы классический зритель');
+} else if (personalMovieDB.count > 30) {
+    console.log('Вы - киноман');
+} else {
+    console.log('Произошла ошибка');
+}
