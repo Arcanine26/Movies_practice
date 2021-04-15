@@ -1,4 +1,11 @@
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+for (let i = 0; numberOfFilms.length <= i; i++){
+    alert('Ошибка');
+    const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+    if (numberOfFilms.length > 0) {
+        break;
+    }
+}
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
