@@ -1,8 +1,5 @@
-let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
-while (numberOfFilms.length <= 0){
-    alert('Error');
-    numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
-}
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -10,13 +7,19 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-const lastWatch1 = prompt('Один из последних просмотренных фильмов?', ''),
-      rating1 = prompt('На сколько вы оцените его?'),
-      lastWatch2 = prompt('Один из последних просмотренных фильмов?', ''),
-      rating2 = prompt('На сколько вы оцените его?');
-personalMovieDB.movies[lastWatch1] = rating1;
-personalMovieDB.movies[lastWatch2] = rating2;
-console.log(personalMovieDB);
+
+for (let i = 0; i < 2; i++){
+    const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
+          rating = prompt('На сколько вы оцените его?');
+    
+    if (lastWatch != null && rating != null && lastWatch != '' && rating != '' && lastWatch.length < 50){
+        personalMovieDB.movies[lastWatch] = rating;
+        console.log('Done');
+    } else {
+        alert('Error');
+        i--;
+    }
+}
 
 if (personalMovieDB.count < 10) {
     console.log('Просмотрено довольно мало фильмов');
@@ -27,3 +30,5 @@ if (personalMovieDB.count < 10) {
 } else {
     console.log('Произошла ошибка');
 }
+
+console.log(personalMovieDB);
