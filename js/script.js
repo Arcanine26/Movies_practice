@@ -7,9 +7,12 @@ let personalMovieDB = {
     privat: false
 };
 console.log(personalMovieDB);
-const lastWatch = [prompt('Один из последних просмотренных фильмов?', ''), prompt('Один из последних просмотренных фильмов?', '')];
-const rating = [prompt('На сколько оцените первый фильм', ''), prompt('На сколько оцените второй фильм', '')];
+const lastWatch = prompt('Один из последних просмотренных фильмов?', '');
+const lastWatch2 = prompt('Один из последних просмотренных фильмов?', '')
+const rating = prompt('На сколько оцените первый фильм', '');
+const rating2 = prompt('На сколько оцените второй фильм', '');
 let movies = {
-    [lastWatch]: rating
+    [lastWatch]: rating,
+    [lastWatch2]: rating2
 };
 console.log(movies);
