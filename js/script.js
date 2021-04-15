@@ -11,10 +11,10 @@ const personalMovieDB = {
 // let i = 0;
 // while (i < 2) {
 //     const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
-//           rating = prompt('На сколько вы оцените его?');
+//           raiting = prompt('На сколько вы оцените его?');
 //     i++;
-//     if (lastWatch != null && rating != null && lastWatch != '' && rating != '' && lastWatch.length < 50){
-//         personalMovieDB.movies[lastWatch] = rating;
+//     if (lastWatch != null && raiting != null && lastWatch != '' && raiting != '' && lastWatch.length < 50){
+//         personalMovieDB.movies[lastWatch] = raiting;
 //         console.log('Done');
 //     } else {
 //         alert('Error');
@@ -24,10 +24,10 @@ const personalMovieDB = {
 
 // do {
 //     const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
-//           rating = prompt('На сколько вы оцените его?');
+//           raiting = prompt('На сколько вы оцените его?');
 //     i++;
-//     if (lastWatch != null && rating != null && lastWatch != '' && rating != '' && lastWatch.length < 50){
-//         personalMovieDB.movies[lastWatch] = rating;
+//     if (lastWatch != null && raiting != null && lastWatch != '' && raiting != '' && lastWatch.length < 50){
+//         personalMovieDB.movies[lastWatch] = raiting;
 //         console.log('Done');
 //     } else {
 //         alert('Error');
@@ -38,10 +38,10 @@ const personalMovieDB = {
 
 for (let i = 0; i < 2; i++){
     const lastWatch = prompt('Один из последних просмотренных фильмов?', ''),
-          rating = prompt('На сколько вы оцените его?');
+          raiting = prompt('На сколько вы оцените его?');
     
-    if (lastWatch != null && rating != null && lastWatch != '' && rating != '' && lastWatch.length < 50){
-        personalMovieDB.movies[lastWatch] = rating;
+    if (lastWatch != null && raiting != null && lastWatch != '' && raiting != '' && lastWatch.length < 50){
+        personalMovieDB.movies[lastWatch] = raiting;
         console.log('Done');
     } else {
         alert('Error');
